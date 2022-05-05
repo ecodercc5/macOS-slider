@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  background-image: url("https://dynamicwallpaper.club/landing-vids/1.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  min-height: 54px;
+  min-width: 276px;
+  background: rgba(240, 240, 240, 0.65);
+  backdrop-filter: blur(100px);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 8px 8px;
+}
+
+.control__title {
+  display: inline-block;
+  color: #130208;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.slider__track {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  border-radius: 999px;
+  background: rgba(37, 37, 37, 0.1);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+}
+
+.slider__icon {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  color: #909094;
+  z-index: 100;
+}
+
+.slider__rail {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  background: #fff;
+  border-radius: 999px;
+  /* min-width: 20px; */
+}
+
+.slider__knob {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0px 0px 2px rgba(90, 90, 90, 0.7);
+  /* cursor: pointer; */
+}
+
+.knob__placeholder {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0px 0px 2px rgba(90, 90, 90, 0.7);
+  left: 0;
+  top: 0;
+}
